@@ -1,0 +1,28 @@
+{
+  "name": "amphora-test-automation",
+  "version": "1.0.0",
+  "description": "Test automation framework for Amphora using Cypress with Cucumber",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:ui": "cypress run --spec \"cypress/e2e/ui/**/*.feature\"",
+    "test:api": "cypress run --spec \"cypress/e2e/api/**/*.feature\"",
+    "report:generate": "node cucumber-html-report.js"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^12.17.4",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-real-events": "^1.14.0",
+    "esbuild": "^0.17.19",
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.js",
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "glob": "^10.4.5"
+  }
+}
