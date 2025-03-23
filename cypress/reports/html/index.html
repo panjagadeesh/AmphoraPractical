@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cypress Test Report</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        .header { 
+            background: #ffffff; 
+            padding: 20px; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .summary { 
+            margin: 20px 0;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test { 
+            margin: 15px 0; 
+            padding: 15px; 
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .passed { 
+            background-color: #d4edda; 
+            border: 1px solid #c3e6cb;
+        }
+        .failed { 
+            background-color: #f8d7da; 
+            border: 1px solid #f5c6cb;
+        }
+        .skipped {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+        }
+        .stats { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .stat-item { 
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .total { background-color: #e9ecef; }
+        .passed-stat { background-color: #d4edda; }
+        .failed-stat { background-color: #f8d7da; }
+        .skipped-stat { background-color: #fff3cd; }
+        .spec-title {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0 10px;
+        }
+        .error-message {
+            color: #721c24;
+            background-color: #f8d7da;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .timestamp {
+            color: #6c757d;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Cypress Test Report</h1>
+        <div class="timestamp">Generated on: 23/3/2025, 1:55:15 am</div>
+        <div class="stats">
+            <div class="stat-item total">Total Tests: 6</div>
+            <div class="stat-item passed-stat">Passed: 6</div>
+            <div class="stat-item failed-stat">Failed: 0</div>
+            <div class="stat-item skipped-stat">Skipped: 0</div>
+        </div>
+    </div>
+    
+    <div class="summary">
+        <h2>Test Results</h2>
+        
+            <div class="spec-title">
+                <h3>Amphora Website UI Tests</h3>
+            </div>
+            
+                <div class="test passed">
+                    <h4>Verify Products dropdown functionality</h4>
+                    <p>Status: PASSED</p>
+                    <p>Duration: 9560ms</p>
+                    
+                </div>
+            
+                <div class="test passed">
+                    <h4>Newsletter signup</h4>
+                    <p>Status: PASSED</p>
+                    <p>Duration: 19702ms</p>
+                    
+                </div>
+            
+        
+            <div class="spec-title">
+                <h3>Petstore API Testing</h3>
+            </div>
+            
+                <div class="test passed">
+                    <h4>Create a new pet</h4>
+                    <p>Status: PASSED</p>
+                    <p>Duration: 1391ms</p>
+                    
+                </div>
+            
+                <div class="test passed">
+                    <h4>Update the created pet</h4>
+                    <p>Status: PASSED</p>
+                    <p>Duration: 548ms</p>
+                    
+                </div>
+            
+                <div class="test passed">
+                    <h4>Read the created pet</h4>
+                    <p>Status: PASSED</p>
+                    <p>Duration: 544ms</p>
+                    
+                </div>
+            
+                <div class="test passed">
+                    <h4>Delete the created pet</h4>
+                    <p>Status: PASSED</p>
+                    <p>Duration: 522ms</p>
+                    
+                </div>
+            
+        
+    </div>
+</body>
+</html>
